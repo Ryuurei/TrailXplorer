@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+        android:id="@+id/record_chronometer"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"/>
+
+    <TextView
+        android:id="@+id/AverageSpeed"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Speed"/>
+
+
+    <TextView
+        android:id="@+id/record_min_altitude"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min Altitude"
+        />
+
+    <TextView
+        android:id="@+id/record_max_altitude"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Altitude"
+        />
+
+    <TextView
+        android:id="@+id/stepNumber"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Steps done:"/>
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Graph showing the evolution of speed every 5 seconds:"/>
+
+    <TextView
+        android:id="@+id/axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y-axis: Speed (k/h), X-axis: Time(s)"
+        android:layout_marginTop="3dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    
+    <com.example.trailxplorer.LineChartView
+        android:id="@+id/linechart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="8dp"
+        />
+
+</LinearLayout>
